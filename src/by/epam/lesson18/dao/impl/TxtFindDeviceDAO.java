@@ -2,16 +2,12 @@ package by.epam.lesson18.dao.impl;
 
 import by.epam.lesson18.bean.device.ElectronicDevice;
 import by.epam.lesson18.bean.criteria.Criteria;
-import by.epam.lesson18.bean.device.SteamCleaner;
-import by.epam.lesson18.bean.device.VacuumCleaner;
-import by.epam.lesson18.bean.device.WashingMachine;
 import by.epam.lesson18.dao.DAOException;
 import by.epam.lesson18.dao.FindDeviceDAO;
 import by.epam.lesson18.dao.util.DeviceBuilder;
 import by.epam.lesson18.dao.util.DeviceMatcher;
 import by.epam.lesson18.dao.util.DeviceReader;
 
-import java.io.*;
 import java.util.*;
 
 public class TxtFindDeviceDAO implements FindDeviceDAO {

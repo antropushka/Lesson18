@@ -60,7 +60,7 @@ public class WashingMachine extends ElectronicDevice implements Serializable {
     @Override
     public String toString() {
         return "WashingMachine : " +
-                ", brand=" + this.getBrand() +
+                " brand=" + this.getBrand() +
                 ", price=" + this.getPrice() +
                 ", maximumLoad=" + maximumLoad +
                 ", maximumSpinSpeed=" + maximumSpinSpeed +

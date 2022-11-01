@@ -16,9 +16,9 @@ public class DeviceBuilder {
     private final String KEY_VALUE_PATTERN = "\\w+=\\w+\\.\\w+|\\w+=\\w+";
     private final Pattern pattern = Pattern.compile(KEY_VALUE_PATTERN);
 
-    private final String STEAM_CLEANER = "Steam cleaner";
-    private final String VACUUM_CLEANER = "Vacuum cleaner";
-    private final String WASHING_MACHINE = "Washing machine";
+    private final String STEAM_CLEANER = "SteamCleaner";
+    private final String VACUUM_CLEANER = "VacuumCleaner";
+    private final String WASHING_MACHINE = "WashingMachine";
 
     private final int STEAM_CLEANER_CRITERIA_LENGTH = SearchCriteria.SteamCleaner.values().length;
     private final int VACUUM_CLEANER_CRITERIA_LENGTH = SearchCriteria.VacuumCleaner.values().length;

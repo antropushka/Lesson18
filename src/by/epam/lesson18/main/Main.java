@@ -6,8 +6,7 @@ import by.epam.lesson18.bean.device.ElectronicDevice;
 import by.epam.lesson18.bean.device.WashingMachine;
 import by.epam.lesson18.dao.DAOException;
 import by.epam.lesson18.dao.DAOFactory;
-import by.epam.lesson18.dao.impl.TxtFindDeviceDAO;
-import by.epam.lesson18.service.ServiceFactory;
+import by.epam.lesson18.dao.FindDeviceDAO;
 import by.epam.lesson18.service.exception.ServiceException;
 
 import java.io.FileNotFoundException;
@@ -18,17 +17,21 @@ public class Main {
 
     public static void main (String[] args) throws FileNotFoundException, ServiceException, DAOException {
 
-        ServiceFactory serviceFactory = ServiceFactory.getInstance();
-        DAOFactory daoFactory = DAOFactory.getInstance();
-        serviceFactory.getElectronicDeviceService();
-
         DevicesCreator.writeItemsToFile();
-
         List<ElectronicDevice> deviceList;
+        DAOFactory daoFactory = DAOFactory.getInstance();
+        FindDeviceDAO findDeviceDAO = daoFactory.getApplianceDAO();
 
         Criteria criteria = new Criteria(WashingMachine.class.getSimpleName());
         criteria.addCriteria(SearchCriteria.WashingMachine.BRAND.name(), "Samsung");
-        System.out.println(daoFactory.getApplianceDAO().find(criteria));
+
+        deviceList = findDeviceDAO.find(criteria);
+        for (int i = 0; i < deviceList.size(); i++) {
+            System.out.println(deviceList.get(i));
+        }
+
+
+
 
 
 
