@@ -2,5 +2,5 @@ SteamCleaner :  brand=Deerma, price=600.0, waterHeatingTime=2.0, maxSteamPressur
 SteamCleaner :  brand=Karher, price=2000.0, waterHeatingTime=7.0, maxSteamPressure=10.0
 VacuumCleaner : brand=Dayson, price=1800.0, construction=вертикальный, dustContainerVolume=1.5
 VacuumCleaner : brand=Dayson, price=2800.0, construction=вертикальный, dustContainerVolume=2.5
-WashingMachine : , brand=Samsung, price=1600.0, maximumLoad=8.0, maximumSpinSpeed=1200.0, numOfPrograms=21
-WashingMachine : , brand=Atlant, price=700.0, maximumLoad=5.0, maximumSpinSpeed=800.0, numOfPrograms=7
+WashingMachine :  brand=Samsung, price=1600.0, maximumLoad=8.0, maximumSpinSpeed=1200.0, numOfPrograms=21
+WashingMachine :  brand=Atlant, price=700.0, maximumLoad=5.0, maximumSpinSpeed=800.0, numOfPrograms=7
